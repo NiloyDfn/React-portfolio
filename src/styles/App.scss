@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import "animations";
+@import "cursor";
+@import "statics";
+@import "header";
+@import "home";
+@import "work";
+@import "Experience";
+@import "Services";
+@import "contact";
+@import "footer";
+@import "mediaquary";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: $text2;
+  color: $color4;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  background-color: $bgcolor;
+  color: $color1;
+  height: 100%;
+  width: 100%;
+}
+
+.disableBtn {
+  background-color: rgb(237, 237, 237);
+  cursor: not-allowed;
+}

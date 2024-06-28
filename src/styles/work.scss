@@ -1,0 +1,139 @@
+#work {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #141d2d;
+  min-height: 100vh;
+  overflow: hidden; // Ensure no overflow
+
+  h2 {
+    font: 700 2rem $text2;
+    width: fit-content;
+    position: relative;
+    padding: 0.5rem;
+    color: $color3;
+    transition: all ease 0.3s;
+    text-transform: capitalize;
+    margin: auto;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background-color: $color3;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+
+  > section {
+    margin-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    gap: 2vw;
+    justify-content: center;
+
+    > article {
+      width: 75%;
+      height: 25vmax;
+      overflow: hidden; 
+    }
+
+    .workItem {
+      overflow: hidden;
+      border-radius: 12px;
+      height: 25vmax;
+      width: 75%;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      margin-bottom: 5vw;
+      background-color: $color2;
+
+      > img {
+        border-radius: 10px;
+        width: 40%;
+        object-fit: cover;
+      }
+
+      > aside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        > p {
+          letter-spacing: 2px;
+          font-weight: 500;
+          line-height: 180%;
+          margin: 2rem;
+        }
+
+        h3 {
+          white-space: nowrap;
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-size: 2rem;
+          text-transform: capitalize;
+        }
+
+        a {
+          color: $color3;
+          text-transform: capitalize;
+          transition: all ease 0.3s;
+          padding-bottom: 4px;
+          font-size: 1.5rem;
+          white-space: nowrap;
+          font-weight: 600;
+          position: relative;
+          display: inline-block;
+
+          &:hover {
+            scale: 1.1;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: $color3;
+            transition: width 0.3s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4rem;
+}

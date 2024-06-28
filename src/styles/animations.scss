@@ -1,0 +1,45 @@
+@keyframes animateSvg {
+  to {
+    transform: translate(-50%, -10px);
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatImage2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes floatText {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(38rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+}
