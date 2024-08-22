@@ -25,7 +25,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.23.1",
     "scss": "^0.2.4",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.21.0",
+    "vercel": "^34.2.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

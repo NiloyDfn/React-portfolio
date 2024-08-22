@@ -15,7 +15,7 @@ const Footer = () => {
 
         <h2>Foysal Ahammed Niloy</h2>
         <p>Motivation is temporary, but discipline last forever.</p>
-        <p>to Err is Human 😊</p>
+        <p>thanks for visiting 😊</p>
       </div>
 
       <aside></aside>
