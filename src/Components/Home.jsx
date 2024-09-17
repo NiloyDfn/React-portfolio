@@ -1,6 +1,8 @@
 import { animate, motion } from "framer-motion";
 import React, { useRef } from "react";
+import pdf from "../assets/resume.pdf"
 import {
+  FaDownload,
   FaFacebook,
   FaGithub,
   FaInstagramSquare,
@@ -36,37 +38,37 @@ const Home = () => {
       x: -500,
       duration: 1,
       opacity: 0,
-      stagger : .5
+      stagger: 0.5,
       // scaleY: -2.5,
     });
     tl.from(".social-media  ", {
       x: 250,
       duration: 1,
-      scaleY : 1.8,
+      scaleY: 1.8,
       stagger: 0.5,
       opacity: 0,
     });
     gsap.from(".social-media button ", {
       x: 150,
-      duration: .5,
-      scaleY : 1.8,
+      duration: 0.5,
+      scaleY: 1.8,
       stagger: 0.5,
       opacity: 0,
     });
-   gsap.from(".container .btn,.icon",{
-    x: 500,
-    duration: .5,
-    opacity: 0,
-    scale : 1.1,
-   })
-   
+    gsap.from(".container .btn,.icon", {
+      x: 500,
+      duration: 0.5,
+      opacity: 0,
+      scale: 1.1,
+    });
   });
 
   return (
     <div id="home">
+      
       <section>
         <div className="h1div">
-          <h4 className="text-[2vw] font-bold">
+          <h4 className="text-[2vw] font-bold ">
             Hi, I Am <span className="name">Niloy</span> I Am
           </h4>
           <div className=" text-[3.2vw] font-bold">
@@ -101,26 +103,26 @@ const Home = () => {
                 target="blank"
                 href="https://www.facebook.com/niloyfoysal07?mibextid=ZbWKwL"
               >
-              <button>
-              <FaFacebook size={"28"} />
-              </button>
+                <button>
+                  <FaFacebook size={"28"} />
+                </button>
               </a>
               <a
                 target="blank"
-                href="https://www.linkedin.com/in/foysal-ahamed-niloy-264075282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                href="https://linkedin.com/in/foysal-ahammed-niloy-bb9289270"
               >
-               <button>
-               <FaLinkedin size={"28"} />
-               </button>
+                <button>
+                  <FaLinkedin size={"28"} />
+                </button>
               </a>
               <a target="blank" href="https://github.com/NiloyDfn/NiloyDfn.git">
                 <button>
-                <FaGithub size={"28"} />
+                  <FaGithub size={"28"} />
                 </button>
               </a>
               <a target="blank" href="https://wa.me/+8801643128094">
                 <button>
-                <RiWhatsappFill size={"28"} />
+                  <RiWhatsappFill size={"28"} />
                 </button>
               </a>
               <a
@@ -128,13 +130,14 @@ const Home = () => {
                 href="https://instagram.com/foysalniloy7?igshid=YTQwZjQ0NmI0OA=="
               >
                 <button>
-                <FaInstagramSquare size={"28"} />
+                  <FaInstagramSquare size={"28"} />
                 </button>
               </a>
             </div>
             <div className="container">
-              <a href="https://wa.me/+8801643128094" className="btn">
-                Hire Me
+              <a href={pdf} className="btn" download> 
+                <FaDownload/>
+                Resume
               </a>
               <a className="icon" href="#work">
                 My Projects

@@ -115,12 +115,16 @@
 }
 
 .btn {
-  padding: 0.6vw 1rem;
+  padding: .4vw .9vw;
   background: $color3;
   border-radius: 16px;
-  font-weight: 700;
+  font-weight: bold;
   margin-right: 1.2vw;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: rgb(253, 246, 246);
   box-shadow: none;
   transition: all ease-in-out 0.5s;
   &:hover {
@@ -153,3 +157,4 @@
 .name {
   color: $color3;
 }
+

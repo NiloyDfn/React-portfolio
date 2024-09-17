@@ -5,7 +5,6 @@ import gsap from "gsap";
 import {motion} from "framer-motion";
 
 
-
 const Services = () => {
 const ref = useRef(null)
 
@@ -81,22 +80,24 @@ const ref = useRef(null)
 
   return (
     <div ref={ref} id="services">
+
       <h2>Services</h2>
       <h6 className="text-white text-2xl text-center capitalize font-bold "> 🫵 You can <span>drag</span> this <span>cards</span></h6>
       <section  className="sec"> 
-        <motion.div drag dragConstraints={ref} whileDrag={{scale : 1.2}} dragElastic={.2}  className="serviceBox1">
+        <motion.div drag dragConstra
+        ints={ref} whileDrag={{scale : 1.1}} dragElastic={.3}  className="serviceBox1">
           <h3>1+</h3>
           <p>years experience</p>
         </motion.div>
-        <motion.div drag dragConstraints={ref} whileDrag={{scale : 1.2}} dragElastic={.2}  className="serviceBox2">
+        <motion.div drag dragConstraints={ref} whileDrag={{scale : 1.1}} dragElastic={.3}  className="serviceBox2">
           <AiFillCiCircle />
           <span>web Development</span>
         </motion.div>
-        <motion.div drag dragConstraints={ref} whileDrag={{scale : 1.2}} dragElastic={.2} className="serviceBox3">
+        <motion.div drag dragCnstraints={ref} whileDrag={{scale : 1.1}} dragElastic={.3} className="serviceBox3">
           <AiFillAndroid />
           <span>Full Stack Development</span>
         </motion.div>
-        <motion.div drag dragConstraints={ref} whileDrag={{scale : 1.2}} dragElastic={.2} className="serviceBox4">
+        <motion.div drag dragConstraints={ref} whileDrag={{scale : 1.1}} dragElastic={.3} className="serviceBox4">
           <AiFillWindows />
           <span>Web app development</span>
         </motion.div>

@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "../assets/data.json";
 import pname from "../assets/data.json";
+import bc from "../assets/bc.jpeg"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -31,6 +32,8 @@ const Work = () => {
 
   return (
     <div id="work" className="work">
+      <img className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]" src={bc} alt="bg-img" />
+
       <div>
         {pname.projector.map((item) => (
           <h2 key={item.name}>{item.name}</h2>
@@ -43,7 +46,7 @@ const Work = () => {
             showIndicators={false}
             showStatus={false}
             showThumbs={false}
-            interval={4000}
+            interval={2000}
             infiniteLoop={true}
             autoPlay={true}
           >
@@ -111,7 +114,9 @@ const Work = () => {
 
 const WorkCard = ({ imgSrc, title, description, url }) => (
   <div className="workItem">
+    <a href={url} target="_blank">
     <img src={imgSrc} alt={title} />
+    </a>
     <aside>
       <h3>{title}</h3>
       <a href={url} target="_blank" rel="noopener noreferrer">

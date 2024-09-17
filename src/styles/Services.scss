@@ -4,7 +4,9 @@
   padding: $p;
   background-color: #141d2d;
   color: $color4;
+  position: relative; 
   overflow: hidden;
+
   > h2 {
     font: 600 2rem $text2;
     width: fit-content;
@@ -47,7 +49,7 @@
     > * {
       width: 100%;
       height: 100%;
-      background-color: $color2;
+      background-color: #21a9a5a8;
       color: $color6;
       display: flex;
       flex-direction: column;
@@ -73,7 +75,7 @@
     .serviceBox1 {
       grid-column: 1 / 2;
       grid-row: 1/3;
-      background-color: $color2;
+      background-color: #21a9a5a8;
 
       > h3 {
         font: 100 5rem $text1;
@@ -90,3 +92,4 @@
     }
   }
 }
+

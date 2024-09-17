@@ -3,104 +3,93 @@
         {
             "id": 1,
             "name": "Html",
-            "imgSrc": "https://logos-download.com/wp-content/uploads/2017/07/HTML5_logo.png",
-            "description": "This is a development image related to coding."
+            "imgSrc": "https://logos-download.com/wp-content/uploads/2017/07/HTML5_logo.png"
           },
           {
             "id": 2,
             "name": "css",
-            "imgSrc": "https://th.bing.com/th/id/OIP.zzMiltvXJNgFUDhNAXAYFAHaFj?rs=1&pid=ImgDetMain",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://th.bing.com/th/id/OIP.zzMiltvXJNgFUDhNAXAYFAHaFj?rs=1&pid=ImgDetMain"
           } , {
             "id": 3,
             "name": "javaScript",
-            "imgSrc": "https://freepngdesign.com/content/uploads/images/javascript-logo-7539.png",
-            "description": "This is a development image related to coding."
+            "imgSrc": "https://freepngdesign.com/content/uploads/images/javascript-logo-7539.png"
           },
           {
             "id": 4,
             "name": "React-js",
-            "imgSrc": "https://th.bing.com/th/id/OIP.JCGGgssMIuUrZFU3I6jv0AHaHC?rs=1&pid=ImgDetMains",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://th.bing.com/th/id/OIP.JCGGgssMIuUrZFU3I6jv0AHaHC?rs=1&pid=ImgDetMains"
           },
           {
             "id": 5,
             "name": "Next-js",
-            "imgSrc": "https://foxundermoon.gallerycdn.vsassets.io/extensions/foxundermoon/next-js/0.0.2/1507561739278/Microsoft.VisualStudio.Services.Icons.Default",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://foxundermoon.gallerycdn.vsassets.io/extensions/foxundermoon/next-js/0.0.2/1507561739278/Microsoft.VisualStudio.Services.Icons.Default"
           },
           {
             "id": 6,
             "name": "Node-js",
-            "imgSrc": "https://cdn.kualo.com/blogassets/wp-content/uploads/2020/11/Node-JS-01.png",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://cdn.kualo.com/blogassets/wp-content/uploads/2020/11/Node-JS-01.png"
           },
           {
             "id": 7,
             "name": "express-js",
-            "imgSrc": "https://aglowiditsolutions.com/wp-content/uploads/2018/12/ExpressJS-300x300.png",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://aglowiditsolutions.com/wp-content/uploads/2018/12/ExpressJS-300x300.png"
           },
           {
-            "id": 8,
+            "id":9,
+            "name": "Three-js",
+            "imgSrc" : "https://blog.logrocket.com/wp-content/uploads/2022/02/Creating-game-three-js.png"
+          },
+          {
+            "id": 10,
             "name": "mongodb",
-            "imgSrc": "https://th.bing.com/th/id/OIP.OEgLqQi5LxtKk77raW0FiAHaHa?w=500&h=500&rs=1&pid=ImgDetMain",
-            "description": "This is a development image related to debugging."
+            "imgSrc" : "https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png"
           },
           {
-            "id": 9,
+            "id":11,
             "name": "github",
-            "imgSrc": "https://www.galam.in/static/Oauthimgs/black_logo_github.jpg",
-            "description": "This is a development image related to debugging."
-          },
-          {
-            "id":10 ,
-            "name": "Tailwind css",
-            "imgSrc": "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/i/jk9yucs4pqv4uutlvuzb.png",
-            "description": "This is a development image related to debugging."
-          },
-          {
-            "id":11 ,
-            "name": "sass",
-            "imgSrc": "https://themeover.com/wp-content/uploads/2019/08/microthemer-sass-compile-manager.gif",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://www.galam.in/static/Oauthimgs/black_logo_github.jpg"
           },
           {
             "id":12 ,
-            "name": "gsap",
-            "imgSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo.gif",
-            "description": "This is a development image related to debugging."
+            "name": "Tailwind css",
+            "imgSrc": "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/i/jk9yucs4pqv4uutlvuzb.png"
           },
           {
             "id":13 ,
-            "name": "typeScript",
-            "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
-            "description": "This is a development image related to debugging."
+            "name": "sass",
+            "imgSrc": "https://themeover.com/wp-content/uploads/2019/08/microthemer-sass-compile-manager.gif"
           },
           {
             "id":14,
+            "name": "gsap",
+            "imgSrc": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo.gif"
+          },
+          {
+            "id":15 ,
+            "name": "typeScript",
+            "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+          },
+          {
+            "id":16,
             "name": "Redux",
-            "imgSrc": "https://th.bing.com/th/id/R.f79a9399e188fce8f0c56645eeafe338?rik=B%2fcanY5kO2IrYg&pid=ImgRaw&r=0",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://th.bing.com/th/id/R.f79a9399e188fce8f0c56645eeafe338?rik=B%2fcanY5kO2IrYg&pid=ImgRaw&r=0"
           },
           {
-            "id":15,
+            "id":17,
             "name": "Stripe",
-            "imgSrc": "https://th.bing.com/th/id/R.b7f19357514aa1887f300ac2af13b601?rik=wQJs4m6gEk5Ekg&pid=ImgRaw&r=0",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://th.bing.com/th/id/R.b7f19357514aa1887f300ac2af13b601?rik=wQJs4m6gEk5Ekg&pid=ImgRaw&r=0"
           },
           {
-            "id":16 ,
+            "id":18 ,
             "name": "Firebase",
-            "imgSrc": "https://sujanbyanjankar.com.np/wp-content/uploads/2018/09/firebase_logo_shot.png",
-            "description": "This is a development image related to debugging."
+            "imgSrc": "https://sujanbyanjankar.com.np/wp-content/uploads/2018/09/firebase_logo_shot.png"
           },
           {
-            "id":16 ,
-            "name": "cahkra ui",
-            "imgSrc": "https://th.bing.com/th/id/OIP.WjH5viyPGWRur8N3i-lv6QAAAA?rs=1&pid=ImgDetMain",
-            "description": "This is a development image related to debugging."
+            "id":19,
+            "name": "lennis",
+            "imgSrc": "https://cdn.prod.website-files.com/64760069e93084646c9ee428/65a78d0aeec1ee148c677c30_lenis-main.jpg"
           }
+
     ],
     "designing_images": [
       {
