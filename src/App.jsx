@@ -1,4 +1,4 @@
-import Lenis from "lenis";
+// import Lenis from "lenis";
 import React, { useState } from "react";
 import Header, { HeaderPhone } from "./Components/Header";
 import Home from "./Components/Home";
@@ -10,20 +10,30 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 import { Toaster } from "react-hot-toast";
 import Cursor from "./Components/Cursor";
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 function App() {
-  const lenis = new Lenis();
 
-  lenis.on("scroll", (e) => {
-    console.log(e);
-  });
+const scroll = new LocomotiveScroll();
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+  // const lenis = new Lenis();
 
-  requestAnimationFrame(raf);
+ 
+  // function raf(time) {
+  //   lenis.raf(time);
+  //   requestAnimationFrame(raf);
+  // }
+
+  // requestAnimationFrame(raf);
+
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true
+// });
+
+
 
   const [menuOpen, setMenuOpen] = useState(false);
 

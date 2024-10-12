@@ -80,7 +80,7 @@ function Experience() {
 
 const ImgCard = ({ imgSrc, name }) => {
   return (
-    <div className="exdiv p-2 m-1.5">
+    <div data-scroll data-scroll-section className="exdiv p-2 m-1.5">
       <img
         className="eximg h-[20vw] w-[20vw] sm:h-[15vw] sm:w-[15vw] md:h-[12vw] md:w-[12vw] lg:h-[10vw] lg:w-[10vw] bg-white p-2 rounded-md object-cover"
         src={imgSrc}

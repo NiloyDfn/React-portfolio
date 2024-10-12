@@ -31,7 +31,7 @@ const Work = () => {
   });
 
   return (
-    <div id="work" className="work">
+    <div id="work" data-scroll-section data-scroll   className="work">
       <img className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]" src={bc} alt="bg-img" />
 
       <div>

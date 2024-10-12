@@ -76,16 +76,15 @@
       padding: 2rem;
       display: flex;
       border: 2px solid $color3;
-          box-shadow: 0 0 1rem $color3;
-
+      box-shadow: 0 0 1rem $color3;
       margin-bottom: 5vw;
       background-color: rgba(0, 0, 0, 0.562);
       
       >a img {
-        border-radius: 10px;
+        border-radius: 2px;
         width: 100%;
-
         object-fit: cover;
+        
       }
 
       > aside {

@@ -79,7 +79,7 @@ const ref = useRef(null)
   });
 
   return (
-    <div ref={ref} id="services">
+    <div ref={ref} id="services" data-scroll-section data-scroll >
 
       <h2>Services</h2>
       <h6 className="text-white text-2xl text-center capitalize font-bold "> 🫵 You can <span>drag</span> this <span>cards</span></h6>

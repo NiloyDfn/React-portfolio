@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <section>
+      <section data-scroll-section data-scroll >
         <form onSubmit={submitHandler}>
           <h2>Contact Me</h2>
           <input

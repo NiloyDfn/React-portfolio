@@ -9,7 +9,7 @@ import { FaGithub, FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer data-scroll-section data-scroll > 
       <div>
         <img src={NiloyImg} />
 

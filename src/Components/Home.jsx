@@ -64,9 +64,9 @@ const Home = () => {
   });
 
   return (
-    <div id="home">
+    <div id="home" data-scroll data-scroll-section data-scroll-speed="-.01">
       
-      <section>
+      <section >
         <div className="h1div">
           <h4 className="text-[2vw] font-bold ">
             Hi, I Am <span className="name">Niloy</span> I Am

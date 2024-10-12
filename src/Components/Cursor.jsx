@@ -25,7 +25,7 @@ function Cursor() {
     });
   }, [cursorPosition]);
 
-  return <div className="cursor"></div>;
+  return <div data-scroll data-scroll-speed=".01" className="cursor"></div>;
 }
 
 export default Cursor;

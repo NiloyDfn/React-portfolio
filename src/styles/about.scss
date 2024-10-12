@@ -42,14 +42,5 @@
     font-style: inherit;
     text-transform: capitalize;
     line-height: 2vw;
-    &:hover{
-        background-color: rgb(54, 75, 86);
-        padding: 3vw;
-        border-radius: 15px;
-        transition: all ease-out .5s;
-        color: rgb(255, 255, 255);
-        align-items: center;
-        font-size: 1.5vw;
-
-    }
+    border-radius: 15px;
 }
