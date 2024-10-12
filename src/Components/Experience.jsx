@@ -47,7 +47,7 @@ function Experience() {
 
         <div className="development mb-6">
           <p className="text-xl font-semibold mb-4">Development</p>
-          <div className=" flex items-center justify-center flex-wrap ">
+          <div data-scroll data-scroll-section data-scroll-speed=".09"  className=" flex items-center justify-center flex-wrap ">
             {data.development_images.map((item, i) => (
               <ImgCard
           
@@ -62,7 +62,7 @@ function Experience() {
 
         <div className="designing">
           <p className="text-xl font-semibold mb-4">Designing</p>
-          <div className="flex items-center justify-center flex-wrap">
+          <div data-scroll data-scroll-section data-scroll-speed="-.09" className="flex items-center justify-center flex-wrap">
             {data.designing_images.map((item, i) => (
               <ImgCard
                 key={i}
