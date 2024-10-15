@@ -20,7 +20,7 @@
   color: $color4;
   scroll-behavior: smooth;
   ::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
   }
   ::selection {
     background-color: rgb(17, 197, 210);
