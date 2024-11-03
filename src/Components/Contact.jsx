@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import vg from "../assets/vg.png";
 import gsap from "gsap";
 import toast from "react-hot-toast";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useGSAP } from "@gsap/react";
+
 const Contact = () => {
+
   useGSAP(() =>{
     const tl = gsap.timeline();
 
@@ -92,6 +94,7 @@ const Contact = () => {
             {" "}
             Send{" "}
           </button>
+          <h4 className=" text-white font-semibold bg-sky-400 p-[2vw] capitalize rounded-xl leading-sm tracking-tight w-2/3"> I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</h4>
         </form>
       </section>
       <aside>

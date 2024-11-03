@@ -224,11 +224,26 @@
     align-items: center;
     justify-content: start;
     width: 100%;
-
+    
   }
   .about-img img{
-    display: none;
+    
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
   }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+  }
+  
   .about-content{
     width: 80%;
   }
