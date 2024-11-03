@@ -7,25 +7,25 @@ import Loader from "./Components/Loader";
 
 // lazy load components
 const Home = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/Home")), 5000);
+  setTimeout(() => resolve(import("./Components/Home")), 3000);
 }));
 const Work = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/Work")), 5000);
+  setTimeout(() => resolve(import("./Components/Work")), 3000);
 }));
 const Experience = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/Experience")), 5000);
+  setTimeout(() => resolve(import("./Components/Experience")), 3000);
 }));
 const Services = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/Services")), 5000);
+  setTimeout(() => resolve(import("./Components/Services")), 3000);
 }));
 const Contact = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/Contact")), 5000);
+  setTimeout(() => resolve(import("./Components/Contact")), 3000);
 }));
 const About = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/About")), 5000);
+  setTimeout(() => resolve(import("./Components/About")), 3000);
 }));
 const Footer = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import("./Components/Footer")), 5000);
+  setTimeout(() => resolve(import("./Components/Footer")), 3000);
 }));
 
 function App() {
