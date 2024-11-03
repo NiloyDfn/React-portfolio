@@ -5,30 +5,32 @@ import Cursor from "./Components/Cursor";
 import LocomotiveScroll from 'locomotive-scroll';
 import Loader from "./Components/Loader";
 
-// Lazy load components
-const Home = lazy(() => import("./Components/Home"));
-const Work = lazy(() => import("./Components/Work")); 
-const Experience = lazy(() => import("./Components/Experience"));
-const Services = lazy(() => import("./Components/Services"));
-const Contact = lazy(() => import("./Components/Contact"));
-const About = lazy(() => import("./Components/About"));
-const Footer = lazy(() => import("./Components/Footer"));
+// lazy load components
+const Home = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/Home")), 5000);
+}));
+const Work = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/Work")), 5000);
+}));
+const Experience = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/Experience")), 5000);
+}));
+const Services = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/Services")), 5000);
+}));
+const Contact = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/Contact")), 5000);
+}));
+const About = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/About")), 5000);
+}));
+const Footer = lazy(() => new Promise(resolve => {
+  setTimeout(() => resolve(import("./Components/Footer")), 5000);
+}));
 
 function App() {
-  // Initialize LocomotiveScroll in useEffect to avoid SSR issues
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      smooth: true,
-      lerp: 0.1, // Linear interpolation, adjust for smoother/faster scrolling
-      multiplier: 1.0,
-      class: 'is-revealed'
-    });
 
-    // Cleanup on unmount
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
+    const locomotiveScroll = new LocomotiveScroll();
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -52,3 +54,5 @@ function App() {
 }
 
 export default App;
+
+
