@@ -14,10 +14,11 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@gsap/react": "^2.1.1",
+    "browserslist": "^4.24.2",
+    "caniuse-lite": "^1.0.30001677",
     "firebase": "^10.11.1",
     "framer-motion": "^11.2.5",
     "gsap": "^3.12.5",
-    "lenis": "^1.1.13",
     "locomotive-scroll": "^5.0.0-beta.13",
     "next-themes": "^0.3.0",
     "react": "^18.2.0",
@@ -30,7 +31,7 @@
     "react-router-hash-link": "^2.4.3",
     "scss": "^0.2.4",
     "typewriter-effect": "^2.21.0",
-    "vercel": "^34.2.8"
+    "vercel": "^32.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
