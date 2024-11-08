@@ -19,6 +19,9 @@
   font-weight: $text2;
   color: $color4;
   scroll-behavior: smooth;
+  ::-webkit-scrollbar{
+    display: none;
+  }
   ::selection {
     background-color: rgb(17, 197, 210);
     color: rgb(0, 0, 0);
