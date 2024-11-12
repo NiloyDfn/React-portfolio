@@ -220,6 +220,7 @@
 @media screen and (max-width: 600px) {
   .workItem a img{
     height: 20vh;
+    width: 100%;
     object-fit: contain;
   }
   .about{
