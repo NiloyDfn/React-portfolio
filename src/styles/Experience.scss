@@ -45,6 +45,9 @@
   }
 }
 .exdiv .eximg{
+  border: 2px solid $color3;
+  box-shadow: 0 0 .5rem $color2;
+  border-radius: .5rem ;
   transition: all ease .3s;
   &:hover{
     scale: .9;

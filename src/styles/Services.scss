@@ -42,6 +42,7 @@
 
   > section {
     display: grid;
+    
     margin: 2rem;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
@@ -53,6 +54,7 @@
       color: $color6;
       display: flex;
       flex-direction: column;
+      
       transition: all 0.3s;
       align-items: center;
       border-radius: 12px;
@@ -76,6 +78,8 @@
       grid-column: 1 / 2;
       grid-row: 1/3;
       background-color: #21a9a5a8;
+      border: 2px solid $color3;
+      box-shadow: 0 0 1rem $color3;
 
       > h3 {
         font: 100 5rem $text1;
@@ -89,6 +93,9 @@
     }
     .serviceBox4 {
       grid-column: 2/4;
+      border: 2px solid $color3;
+      box-shadow: 0 0 1rem $color3;
+
     }
   }
 }
