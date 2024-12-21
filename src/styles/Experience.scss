@@ -25,25 +25,10 @@
       color: $color3;
     }
   }
-  div {
-    p {
-      margin-top: 2vw;
-      padding: 1vw 2.5vw;
-      width: fit-content;
-      font-size: 1.1rem;
-      transform: translateX(0);
-      transition: all ease-in-out .5s;
-      text-transform: capitalize;
-      border-radius: 2vw;
-      border: 1.7px solid white;
-      &:hover{
-        scale: .9;
-        background-color: $color3;
-      }
-    }
+ 
     
   }
-}
+
 .exdiv .eximg{
   border: 2px solid $color3;
   box-shadow: 0 0 .5rem $color2;
@@ -52,4 +37,49 @@
   &:hover{
     scale: .9;
   }
+}
+
+
+// button hover 
+.buttonHover {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonHover p {
+  margin: 0;
+}
+
+.buttonHover::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background-image: linear-gradient(to left, #31baec 0%, #47f3f9 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.buttonHover:hover::before {
+  width: 9em;
+  left: auto;
+  right: 0;
+  background-image: linear-gradient(to right, #31baec 0%, #47f3f9 100%);
 }

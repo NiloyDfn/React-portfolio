@@ -46,7 +46,7 @@ function Experience() {
         </h2>
 
         <div className="development mb-6">
-          <p className="text-xl font-semibold mb-4">Development</p>
+          <p className="buttonHover text-xl font-semibold mb-4">Development</p>
           <div data-scroll data-scroll-section data-scroll-speed=".09"  className=" flex items-center justify-center flex-wrap ">
             {data.development_images.map((item, i) => (
               <ImgCard
@@ -61,7 +61,7 @@ function Experience() {
         </div>
 
         <div className="designing">
-          <p className="text-xl font-semibold mb-4">Designing</p>
+          <p className="buttonHover text-xl font-semibold mb-4 ">Designing</p>
           <div data-scroll data-scroll-section data-scroll-speed="-.09" className="flex items-center justify-center flex-wrap">
             {data.designing_images.map((item, i) => (
               <ImgCard
@@ -94,3 +94,5 @@ const ImgCard = ({ imgSrc, name }) => {
 };
 
 export default Experience;
+
+
