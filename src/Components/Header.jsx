@@ -7,12 +7,6 @@ import { MdEmail } from "react-icons/md";
 const Header = ({ menuOpen, setMenuOpen }) => {
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.from(".h3logo",{
-      y: -500,
-      duration : .5,
-      opacity : 0,
-      scale : 1.1
-    })
     tl.from(".divtag  " , {
       y: -150,
       stagger: .5,

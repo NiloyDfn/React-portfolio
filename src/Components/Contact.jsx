@@ -94,7 +94,7 @@ const Contact = () => {
             {" "}
             Send{" "}
           </button>
-          <h4 className=" text-white font-semibold bg-sky-400 p-[2vw] capitalize rounded-xl leading-sm tracking-tight w-2/3"> I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</h4>
+<h4 className="text-white font-bold bg-blue-800  capitalize rounded-xl leading-sm tracking-tight p-2 w-10/12"> I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</h4>
         </form>
       </section>
       <aside>

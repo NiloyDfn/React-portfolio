@@ -75,17 +75,12 @@
             "imgSrc": "https://th.bing.com/th/id/R.f79a9399e188fce8f0c56645eeafe338?rik=B%2fcanY5kO2IrYg&pid=ImgRaw&r=0"
           },
           {
-            "id":17,
-            "name": "Stripe",
-            "imgSrc": "https://th.bing.com/th/id/R.b7f19357514aa1887f300ac2af13b601?rik=wQJs4m6gEk5Ekg&pid=ImgRaw&r=0"
-          },
-          {
-            "id":18 ,
+            "id":17 ,
             "name": "Firebase",
             "imgSrc": "https://sujanbyanjankar.com.np/wp-content/uploads/2018/09/firebase_logo_shot.png"
           },
           {
-            "id":19,
+            "id":18,
             "name": "lennis",
             "imgSrc": "https://cdn.prod.website-files.com/64760069e93084646c9ee428/65a78d0aeec1ee148c677c30_lenis-main.jpg"
           }

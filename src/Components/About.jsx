@@ -1,5 +1,11 @@
 import React from 'react'
 import img from "../assets/niloy.png"
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+
+
+
+
 
 const About = () => {
   return (
@@ -10,11 +16,10 @@ const About = () => {
         <div className="about-content" data-scroll data-scroll-speed="-.2">
             <h2 className="heading">About <span>Me</span></h2>
             <h3>Full Stack Developer!</h3>
-            <p>I am a passionate and skilled MERN stack developer with a strong background in full-stack web development. I am dedicated to creating responsive, interactive, and user-friendly web applications that meet and exceed client expectations. My commitment to writing clean, efficient code, along with my ability to work collaboratively in a team, has allowed me to deliver outstanding results on a variety of projects.</p>
+            <h4>I am a passionate and skilled MERN stack developer with a strong background in full-stack web development. I am dedicated to creating responsive, interactive, and user-friendly web applications that meet and exceed client expectations. My commitment to writing clean, efficient code, along with my ability to work collaboratively in a team, has allowed me to deliver outstanding results on a variety of projects.</h4>
         </div>
-
     </div>     
   )
-}
+};
 
 export default About

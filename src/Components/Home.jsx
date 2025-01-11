@@ -177,7 +177,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <img src={NiloyImg} alt="Foysal ahamed Niloy" />
+        <img src={NiloyImg} alt="reloading" />
         <div className="drop-icon">
           <BsChevronDown size={"30"} />
         </div>
