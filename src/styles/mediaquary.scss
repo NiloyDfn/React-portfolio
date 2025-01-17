@@ -209,8 +209,8 @@
   }
 }
 .about-img img{
-  height: 30vh;
-  width: 30vh;
+  height:25vh;
+  width: 25vh;
 }
 .about{
   gap: 8vw;
@@ -252,11 +252,18 @@
     width: 80%;
   }
   .about-content h2 , h3{
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .about-content span{
-    font-size: 8vw;
+    font-size: 6vw;
   }
+  .about-content h4{
+    width: 100%;
+    font-size: 5vw;
+    text-transform: capitalize;
+    line-height: 6vw;
+}
+
  
   #home {
     min-height: 100vw;
