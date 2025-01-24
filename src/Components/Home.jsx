@@ -49,14 +49,14 @@ const Home = () => {
       opacity: 0,
     });
     gsap.from(".social-media button ", {
-      x: 150,
+      y: -150,
       duration: 0.5,
       scaleY: 1.8,
       stagger: 0.5,
       opacity: 0,
     });
     gsap.from(".container .btn,.icon", {
-      x: 500,
+      y: 300,
       duration: 0.5,
       opacity: 0,
       scale: 1.1,
