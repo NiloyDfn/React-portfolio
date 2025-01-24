@@ -42,10 +42,10 @@ const Home = () => {
       // scaleY: -2.5,
     });
     tl.from(".social-media  ", {
-      x: 250,
+      y: 250,
       duration: 1,
       scaleY: 1.8,
-      stagger: 0.5,
+      stagger: 0.8,
       opacity: 0,
     });
     gsap.from(".social-media button ", {
