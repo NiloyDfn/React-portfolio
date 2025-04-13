@@ -1,6 +1,6 @@
 import { animate, motion } from "framer-motion";
 import React, { useRef } from "react";
-import pdf from "../assets/foysal's Resume-hackerresume.pdf"
+import pdf from "../assets/resume.pdf"
 import {
   FaDownload,
   FaFacebook,
