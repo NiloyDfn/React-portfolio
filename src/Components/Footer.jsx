@@ -1,27 +1,50 @@
 import React from "react";
 import NiloyImg from "../assets/me2.png";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiOutlineArrowUp,
-} from "react-icons/ai";
-import { FaGithub, FaInstagramSquare } from "react-icons/fa";
+import { AiOutlineArrowUp } from "react-icons/ai";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
-  return (
-    <footer  > 
-      <div>
-        <img src={NiloyImg} />
+  const socialLinks = [
+    { icon: <FaGithub />, url: "https://github.com/NiloyDfn", label: "GitHub" },
+    { icon: <FaInstagram />, url: "https://www.instagram.com/dfn_official7/", label: "Instagram" },
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/foysal-ahammed-niloy-bb9289270/", label: "LinkedIn" },
+  ];
 
-        <h2>Foysal Ahammed Niloy</h2>
-        <p>Motivation is temporary, but discipline last forever.</p>
-        <p>thanks for visiting 😊</p>
+  return (
+    <footer>
+      <div className="footer-content">
+        <div className="profile-section">
+          <div className="profile-image-container">
+            <img src={NiloyImg} alt="Foysal Ahammed Niloy" />
+          </div>
+          <h2>Foysal Ahammed Niloy</h2>
+          <p className="tagline">"Motivation is temporary, but discipline lasts forever."</p>
+        </div>
+
+        <div className="social-section">
+          <h3>Connect With Me</h3>
+          <div className="social-icons">
+            {socialLinks.map((link, index) => (
+              <a 
+                key={index} 
+                href={link.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label={link.label}
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <aside></aside>
-      <a className="ok" href="#home">
-        <AiOutlineArrowUp />
-      </a>
+      <div className="footer-bottom">
+        <p>© {new Date().getFullYear()} • Thanks for visiting 😊</p>
+        <a className="scroll-to-top" href="#home" aria-label="Scroll to top">
+          <AiOutlineArrowUp />
+        </a>
+      </div>
     </footer>
   );
 };

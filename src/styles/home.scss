@@ -1,20 +1,35 @@
 #home {
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     overflow: hidden;
   }
   height: 100vh;
   width: 100%;
   display: flex;
+  position: relative;
+
+  /* Spline background styling */
+  .spline-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Place behind content */
+    // pointer-events: none; /* Allows clicking through to elements beneath */
+  }
 
   > section {
     width: 100%;
+    position: relative; /* Ensure z-indexing works */
+    z-index: 2; /* Place content above the background */
+    
     &:first-of-type {
       padding-left: 4vw;
       > div {
         height: 100%;
         padding: 4vw;
-        h4{
-          font : 900 2.2rem $text1;
+        h4 {
+          font: 900 2.2rem $text1;
           padding-top: 2rem;
         }
       
@@ -41,7 +56,8 @@
           padding: 2vw;
           flex-direction: column;
           transition: all ease 0.3s;
-          background-color: rgb(31, 229, 255);
+          background-color: rgba(31, 229, 255, 0.8); /* Semi-transparent background */
+          backdrop-filter: blur(5px); /* Blur effect for better readability */
           &:hover {
             scale: 1.1;
             transform: rotate(-2deg);
@@ -72,7 +88,8 @@
     }
     &:last-of-type {
       padding: 8vw;
-      display: flex-end;
+      display: flex;
+      justify-content: flex-end;
       align-items: center;
       flex-direction: column;
       overflow-x: hidden;
@@ -94,6 +111,7 @@
   bottom: 0%;
   transform: translateX(-50%);
   animation: animateSvg 0.7s infinite linear alternate;
+  z-index: 2; /* Ensure it appears above the spline background */
 }
 
 .social-media a {
@@ -161,3 +179,24 @@
   color: $color3;
 }
 
+/* Add keyframes for animations */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateSvg {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}

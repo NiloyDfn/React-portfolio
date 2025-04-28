@@ -1,6 +1,7 @@
 import { animate, motion } from "framer-motion";
-import React, { useRef } from "react";
-import pdf from "../assets/foysal's Resume-hackerresume (2).pdf"
+import React, { useRef, useEffect } from "react";
+import pdf from "../assets/foysal's Resume-hackerresume (2).pdf";
+import Spline from '@splinetool/react-spline';
 import {
   FaDownload,
   FaFacebook,
@@ -39,16 +40,15 @@ const Home = () => {
       duration: 1,
       opacity: 0,
       stagger: 0.5,
-      // scaleY: -2.5,
     });
-    tl.from(".social-media  ", {
+    tl.from(".social-media", {
       y: 250,
       duration: 1,
       scaleY: 1.8,
       stagger: 0.8,
       opacity: 0,
     });
-    gsap.from(".social-media button ", {
+    gsap.from(".social-media button", {
       y: -150,
       duration: 0.5,
       scaleY: 1.8,
@@ -65,13 +65,19 @@ const Home = () => {
 
   return (
     <div id="home" data-scroll data-scroll-section data-scroll-speed="-.01">
+      {/* Spline background container */}
+      <div className="spline-background">
+        <Spline
+          scene="https://prod.spline.design/uLhGUJCWeNyazg3w/scene.splinecode"
+        />
+      </div>
       
-      <section >
+      <section>
         <div className="h1div">
-          <h4 className="text-[2vw] font-bold ">
+          <h4 className="text-[2vw] font-bold">
             Hi, I Am <span className="name">Niloy</span> I Am
           </h4>
-          <div className=" text-[3.2vw] font-bold">
+          <div className="text-[3.2vw] font-bold">
             <Typewriter
               options={{
                 strings: [
@@ -88,7 +94,6 @@ const Home = () => {
             />
           </div>
           <h6>
-            {" "}
             Creating <span className="name">Websites</span> and{" "}
             <span className="name">web applications</span>
           </h6>
@@ -135,8 +140,8 @@ const Home = () => {
               </a>
             </div>
             <div className="container">
-              <a href={pdf} className="btn" download> 
-                <FaDownload/>
+              <a href={pdf} className="btn" download>
+                <FaDownload />
                 Resume
               </a>
               <a className="icon" href="#work">
