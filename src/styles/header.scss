@@ -89,7 +89,6 @@ nav {
     color: $color3;
   }
 }
-
 .navPhone {
   transform: translateX(200%);
   transition: all 0.5s;
@@ -98,7 +97,7 @@ nav {
   padding: 1rem;
   
   /* Updated with transparent gradient */
-  background-color: rgba(123, 123, 123, 0.329);
+  background-color: rgba(255, 255, 255, 0); /* Made background fully transparent */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   

@@ -74,9 +74,9 @@ const Home = () => {
       
       <section>
         <div className="h1div">
-          <h4 className="text-[2vw] font-bold">
+          <h6 className="text-[2vw] font-bold">
             Hi, I Am <span className="name">Niloy</span> I Am
-          </h4>
+          </h6>
           <div className="text-[3.2vw] font-bold">
             <Typewriter
               options={{

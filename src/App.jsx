@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Header, { HeaderPhone } from "./Components/Header";
 import { Toaster } from "react-hot-toast";
-import Cursor from "./Components/Cursor";
 import LocomotiveScroll from 'locomotive-scroll';
+import Header from "./Components/Header";
+import { HeaderPhone } from "./Components/Header";
 import Home from "./Components/Home";
+import Cursor from "./Components/Cursor";
 import Work from "./Components/Work";
 import Experience from "./Components/Experience";
 import Services from "./Components/Services";
@@ -13,7 +14,9 @@ import Footer from "./Components/Footer";
 
 function App() {
 
+  useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll();
+  }, []);
 
   const [menuOpen, setMenuOpen] = useState(false);
 

@@ -7,8 +7,14 @@
   "projects": [
     {
       "date": "5/15/2024",
+      "title": "Thirtysixstudios",
+      "url": "https://thirty-six-studios-psi.vercel.app/",
+      "imgSrc" : "https://media-hosting.imagekit.io/34070a9a71944367/Screenshot_12-5-2025_16547_thirtysixstudio.com.jpeg?Expires=1841652411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=dBGcyKDUVYU8VIIPIPIzninz5-Fv2vWp17ooR3zgd56S24ngSW3s8pLJLv4P8Qt17UPiS3f-jTesgd4wW5n4HiVFa6whfletdbImXH6sX8ydQTB~oxTeIziDC9E3EKc47J~NM0qH-pfikyAEYtO2dDeHfA8xeFlF-hSv0IB9OJUkXjmvd16Vg35nFY9w-SMqchIJGTQEa49D-nB0L~4QBmTK9fOQpgIgTPdhZ8ViVj021wFMxBGAuureyvFlcGJGH7okD2qOWRUW~xdB5qNTaORN6HnRjSnMopSO56acPuBZLe3oQFonNqaOA7ZRD7seErzhS7YkxCbrOomPkxyM2g__"
+    },
+    {
+      "date": "5/15/2024",
       "title": "3d website",
-      "url": "https://3d-website-react-js.vercel.app",
+      "url": "https://thirty-six-studios-psi.vercel.app/",
       "imgSrc": "https://media-hosting.imagekit.io/f60c288585e74a59/Screenshot%202025-04-27%20231821.png?Expires=1840384830&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=k3X8k3sdLbg7PRikCBUQRl63yiUQxAT9-hlhYjN780efhCv-rF6qlf6txT4jHWmSspicZqbJQPPwZeo85wj6IWBIhmBVN7XvDXnDM423HIe~PEXFIiM8rC~LRLfsR3GbDWsJcH5mh890CjQ584BNVwpZCXVP71jTEuFA5C06vkbIOG0LLps8UBQBvVSFwHnm~h6RJcuVPoGRZ5ylEs5fYkafhJD13VUaxS5tRmfImPaNLHM1mpZX-ySqYvbhMXb7-P-ESE5Vw7VNw~HOlDunTz9PJybwjQkLWlldVT2Pq40TKPQ7MehUzN1H~nOzs~F7-9Y4XVx~qlLiPsGpkJlBRw__"
     },
     {
