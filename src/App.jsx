@@ -5,12 +5,12 @@ import Header from "./Components/Header";
 import { HeaderPhone } from "./Components/Header";
 import Home from "./Components/Home";
 import Cursor from "./Components/Cursor";
-import Work from "./Components/Work";
-import Experience from "./Components/Experience";
-import Services from "./Components/Services";
-import Contact from "./Components/Contact";
-import About from "./Components/About";
-import Footer from "./Components/Footer";
+const Work = React.lazy(() => import("./Components/Work"));
+const Experience = React.lazy(() => import("./Components/Experience"));
+const Services = React.lazy(() => import("./Components/Services"));
+const Contact = React.lazy(() => import("./Components/Contact"));
+const About = React.lazy(() => import("./Components/About"));
+const Footer = React.lazy(() => import("./Components/Footer"));
 
 function App() {
 
