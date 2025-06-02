@@ -132,7 +132,7 @@ const Home = () => {
               </a>
               <a
                 target="blank"
-                href="https://instagram.com/foysalniloy7?igshid=YTQwZjQ0NmI0OA=="
+                href="https://www.instagram.com/dfn_official7/"
               >
                 <button>
                   <FaInstagramSquare size={"28"} />
