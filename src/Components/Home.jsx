@@ -120,7 +120,7 @@ const Home = () => {
                   <FaLinkedin size={"28"} />
                 </button>
               </a>
-              <a target="blank" href="https://github.com/NiloyDfn/NiloyDfn.git">
+              <a target="blank" href="https://github.com/NiloyDfn">
                 <button>
                   <FaGithub size={"28"} />
                 </button>
