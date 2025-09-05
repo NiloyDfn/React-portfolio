@@ -1,7 +1,7 @@
 import { animate, motion } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import pdf from "../assets/foysal's Resume-hackerresume (2).pdf";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 import {
   FaDownload,
   FaFacebook,
@@ -66,11 +66,11 @@ const Home = () => {
   return (
     <div id="home" data-scroll data-scroll-section data-scroll-speed="-.01">
       {/* Spline background container */}
-      <div className="spline-background">
+      {/* <div className="spline-background">
         <Spline
           scene="https://prod.spline.design/uLhGUJCWeNyazg3w/scene.splinecode"
         />
-      </div>
+      </div> */}
       
       <section>
         <div className="h1div">
