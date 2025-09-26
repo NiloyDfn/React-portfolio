@@ -182,10 +182,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <img src={NiloyImg} alt="reloading" />
-        <div className="drop-icon">
-          <BsChevronDown size={"30"} />
-        </div>
+        <img src={NiloyImg} alt="img" />
       </section>
     </div>
   );
