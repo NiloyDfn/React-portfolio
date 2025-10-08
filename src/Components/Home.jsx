@@ -1,7 +1,8 @@
 import { animate, motion } from "framer-motion";
-import React, { useRef, useEffect } from "react";
-import pdf from "../assets/foysal's Resume-hackerresume (2).pdf";
-// import Spline from '@splinetool/react-spline';
+import React, { useRef } from "react";
+import pdf from "../assets/Niloy-Resume.pdf";
+import DotGrid from "./DotGrid";
+
 import {
   FaDownload,
   FaFacebook,
@@ -12,7 +13,7 @@ import {
 import { MdEmail } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import NiloyImg from "../assets/me2.png";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
@@ -20,12 +21,14 @@ import { gsap } from "gsap";
 const Home = () => {
   const clientCount = useRef(null);
   const projectCount = useRef(null);
+  
   const animationClientCount = () => {
     animate(0, 0, {
       duration: 4,
       onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
     });
   };
+  
   const animationProjectCount = () => {
     animate(0, 20, {
       duration: 3,
@@ -65,12 +68,29 @@ const Home = () => {
 
   return (
     <div id="home" data-scroll data-scroll-section data-scroll-speed="-.01">
-      {/* Spline background container */}
-      {/* <div className="spline-background">
-        <Spline
-          scene="https://prod.spline.design/uLhGUJCWeNyazg3w/scene.splinecode"
+      {/* DotGrid Background - positioned absolutely behind all content */}
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        zIndex: 1
+      }}>
+        <DotGrid
+          dotSize={16}
+          gap={32}
+          baseColor="#5227FF"
+          activeColor="#1fe5ff"
+          proximity={150}
+          speedTrigger={100}
+          shockRadius={250}
+          shockStrength={5}
+          maxSpeed={5000}
+          resistance={750}
+          returnDuration={1.5}
         />
-      </div> */}
+      </div>
       
       <section>
         <div className="h1div">

@@ -1,33 +1,32 @@
+// Define your color variables (adjust these to match your theme)
+$text1: 'Roboto', sans-serif;
+$text2: 'Poppins', sans-serif;
+$color3: #1fe5ff; // Cyan accent color
+$color6: #000000; // Black text color
+
 #home {
   ::-webkit-scrollbar {
     overflow: hidden;
   }
+  
   height: 100vh;
   width: 100%;
   display: flex;
   position: relative;
-
-  // /* Spline background styling */
-  // .spline-background {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: 2; /* Place behind content */
-  //   // pointer-events: none; /* Allows clicking through to elements beneath */
-  // }
+  overflow: hidden;
 
   > section {
     width: 100%;
-    position: relative; /* Ensure z-indexing works */
-    z-index: 2; /* Place content above the background */
+    position: relative;
+    z-index: 2; // Ensure content appears above DotGrid background
     
     &:first-of-type {
       padding-left: 4vw;
+      
       > div {
         height: 100%;
         padding: 4vw;
+        
         h4 {
           font: 900 2.2rem $text1;
           padding-top: 2rem;
@@ -37,7 +36,9 @@
           margin: 20px 0;
           height: 40px;
           font-size: 2.2vw;
+          color: $color3;
         }
+        
         aside {
           display: flex;
           margin-top: 2vw;
@@ -45,6 +46,7 @@
           justify-content: space-between;
           width: 80%;
         }
+        
         article {
           margin: 1.2rem 0;
           width: 19rem;
@@ -56,8 +58,9 @@
           padding: 2vw;
           flex-direction: column;
           transition: all ease 0.3s;
-          background-color: rgba(31, 229, 255, 0.8); /* Semi-transparent background */
-          backdrop-filter: blur(5px); /* Blur effect for better readability */
+          background-color: rgba(31, 229, 255, 0.8);
+          backdrop-filter: blur(5px);
+          
           &:hover {
             scale: 1.1;
             transform: rotate(-2deg);
@@ -68,24 +71,25 @@
             text-transform: capitalize;
             color: $color6;
           }
-          span {
-            font: 800 2.1rem $text2;
-          }
+          
           span {
             font: 600 1rem $text2;
             color: $color6;
           }
         }
+        
         article[data-special] {
           width: 22rem;
-        }
-        article[data-special] p {
-          font-size: 1.5rem;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
+          
+          p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+          }
         }
       }
     }
+    
     &:last-of-type {
       padding: 8vw;
       display: flex;
@@ -93,7 +97,6 @@
       align-items: center;
       flex-direction: column;
       overflow-x: hidden;
-      
 
       > img {
         height: 30vw;
@@ -105,6 +108,7 @@
     }
   }
 }
+
 .drop-icon {
   position: absolute;
   color: $color3;
@@ -112,32 +116,44 @@
   bottom: 0%;
   transform: translateX(-50%);
   animation: animateSvg 0.7s infinite linear alternate;
-  z-index: 2; /* Ensure it appears above the spline background */
+  z-index: 2;
 }
 
-.social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.8vh;
-  background: transparent;
-  border: 2px solid $color3;
-  border-radius: 50%;
-  font-size: 1.8vw;
-  color: $color3;
-  margin: 2.5vw 1vw 2.5vw 0;
-  transition: all 0.5s ease;
-}
+.social-media {
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8vh;
+    background: transparent;
+    border: 2px solid $color3;
+    border-radius: 50%;
+    font-size: 1.8vw;
+    color: $color3;
+    margin: 2.5vw 1vw 2.5vw 0;
+    transition: all 0.5s ease;
 
-.social-media a:hover {
-  background: $color3;
-  color: $color3;
-  scale: 1.2;
-  box-shadow: 0 0 1rem $color3;
+    &:hover {
+      background: $color3;
+      color: #ffffff;
+      scale: 1.2;
+      box-shadow: 0 0 1rem $color3;
+    }
+    
+    button {
+      background: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 .btn {
-  padding: .4vw .9vw;
+  padding: 0.4vw 0.9vw;
   background: $color3;
   border-radius: 16px;
   font-weight: bold;
@@ -145,14 +161,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
   color: rgb(253, 246, 246);
   box-shadow: none;
   transition: all ease-in-out 0.5s;
+  text-decoration: none;
+  
   &:hover {
     box-shadow: 0 0 1rem $color3;
+    scale: 1.05;
   }
 }
+
 .container {
   display: flex;
   margin-bottom: 1.6vw;
@@ -161,26 +181,36 @@
   justify-content: start;
   color: $color3;
   font-size: 1.2vw;
-}
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1vw 1.5vw;
+  width: fit-content;
 
-.container a {
-  text-decoration: none;
-  transition: all ease-out 0.3s;
-  display: flex;
-  align-items: center;
-  &:hover {
-    scale: 1.1;
+  a {
+    text-decoration: none;
+    transition: all ease-out 0.3s;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+    &:hover {
+      scale: 1.1;
+    }
+
+    .icon {
+      margin-left: 5px;
+    }
   }
 }
 
-.container a .icon {
-  margin-left: 5px;
-}
 .name {
   color: $color3;
 }
 
-/* Add keyframes for animations */
+/* Keyframe Animations */
 @keyframes floatImage {
   0% {
     transform: translateY(0);
@@ -201,5 +231,151 @@
     transform: translateX(-50%) translateY(10px);
   }
 }
- 
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #home {
+    flex-direction: column;
+    height: auto;
+    
+    > section {
+      &:first-of-type {
+        padding-left: 2vw;
+        
+        > div {
+          padding: 2vw;
+          
+          .typewriter {
+            font-size: 3vw;
+          }
+          
+          aside {
+            flex-direction: column;
+            width: 100%;
+            gap: 2vw;
+          }
+          
+          article {
+            width: 100%;
+            max-width: 22rem;
+          }
+        }
+      }
+      
+      &:last-of-type {
+        padding: 4vw;
+        
+        > img {
+          height: 50vw;
+          width: 50vw;
+          max-width: 400px;
+          max-height: 400px;
+        }
+      }
+    }
+  }
+  
+  .social-media a {
+    font-size: 2.5vw;
+    margin: 2vw 0.8vw 2vw 0;
+  }
+  
+  .container {
+    font-size: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 1vw 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    > section {
+      &:first-of-type {
+        > div {
+          h6 {
+            font-size: 4vw !important;
+          }
+          
+          .typewriter {
+            font-size: 4.5vw;
+            height: auto;
+          }
+        }
+      }
+      
+      &:last-of-type {
+        > img {
+          height: 60vw;
+          width: 60vw;
+        }
+      }
+    }
+  }
+  
+  .social-media a {
+    font-size: 4vw;
+    padding: 1vh;
+  }
+  
+  .container {
+    font-size: 3vw;
+    
+    a {
+      margin-bottom: 2vw;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    > section {
+      &:first-of-type {
+        padding-left: 4vw;
+        
+        > div {
+          padding: 4vw;
+          
+          h6 {
+            font-size: 5vw !important;
+          }
+          
+          .typewriter {
+            font-size: 6vw;
+          }
+          
+          article {
+            padding: 4vw;
+            height: auto;
+            min-height: 6rem;
+            
+            > p {
+              font-size: 1.5rem;
+            }
+            
+            span {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .social-media a {
+    font-size: 6vw;
+    margin: 3vw 1.5vw 3vw 0;
+  }
+  
+  .btn {
+    padding: 2vw 4vw;
+    font-size: 3.5vw;
+  }
+  
+  .container {
+    font-size: 4vw;
+  }
+}
 
